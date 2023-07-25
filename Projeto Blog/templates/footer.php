@@ -1,5 +1,5 @@
 <footer>
-    <p>Hora de Cordar &copy; <?=  date("Y") ?></p>
+    <p>Hora de codar &copy; <?php echo date("Y");?></p>
 </footer>
 </body>
 </html>
