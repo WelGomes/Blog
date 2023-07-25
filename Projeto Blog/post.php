@@ -22,10 +22,10 @@
 
 <main id="post-container">
   <div class="content-container">
-    <h1 id="main-title"><?= $currentPost['title'] ?></h1>
-    <p id="post-description"><?= $currentPost['description'] ?></p>
+    <h1 id="main-title"><?php $currentPost['title'] ?></h1>
+    <p id="post-description"><?php $currentPost['description'] ?></p>
     <div class="img-container">
-      <img src="<?= $BASE_URL ?>/img/<?= $currentPost['img'] ?>" alt="<?= $currentPost['title'] ?>">
+      <img src="<?php $BASE_URL ?>/img/<?= $currentPost['img'] ?>" alt="<?php $currentPost['title'] ?>">
     </div>
     <p class="post-content">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis illo adipisci earum minima alias unde itaque, eos perferendis, libero soluta qui mollitia ad nihil provident suscipit dolore! Voluptatem, rem.
@@ -46,13 +46,13 @@
     <h3 id="tags-title">Tags</h3>
     <ul id="tag-list">
       <?php foreach($currentPost['tags'] as $tag): ?>
-        <li><a href="#"><?= $tag ?></a></li>
+        <li><a href="#"><?php $tag ?></a></li>
       <?php endforeach; ?>
     </ul>
     <h3 id="categories-title">Categorias</h3>
     <ul id="categories-list">
       <?php foreach($categories as $category): ?>
-        <li><a href="#"><?= $category ?></a></li>
+        <li><a href="#"><?php $category ?></a></li>
       <?php endforeach; ?>
     </ul>
   </div>
